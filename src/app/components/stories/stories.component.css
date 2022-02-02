@@ -1,0 +1,15 @@
+.stories {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 60px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 500px) {
+  .property-list {
+    justify-content: center;
+    /* flex: 1; */
+    width: 100%;
+  }
+}

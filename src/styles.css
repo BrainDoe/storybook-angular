@@ -10,8 +10,16 @@ body {
   background-color: #fcf6f6;
 }
 
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
 .container {
   width: 95%;
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
 }
