@@ -47,7 +47,8 @@ h1 {
 .form-group input:focus,
 .form-group input:active {
   outline: none;
-  box-shadow: 02px 02px 10px 10px rgba(138, 159, 193, 0.14);
+  /* box-shadow: 02px 02px 10px 10px rgba(138, 159, 193, 0.14); */
+  box-shadow: 02px 02px 5px 5px rgba(138, 159, 193, 0.14);
   color: teal;
   background-color: white;
 }
@@ -67,5 +68,6 @@ h1 {
 
 .form-group button:hover {
   background-color: #99a3b3;
+  cursor: pointer;
 }
 
