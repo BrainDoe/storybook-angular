@@ -133,13 +133,14 @@ button.active-btn{
   transition: all 1s ease;
   pointer-events: all;
 }
-
-
-
-
-
 */
 
+
+@media (max-width: 600px) {
+  .wrapper {
+    width: 100%;
+  }
+}
 
 
 
