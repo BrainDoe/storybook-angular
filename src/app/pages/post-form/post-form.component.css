@@ -1,0 +1,234 @@
+.wrapper {
+  width: 70%;
+  margin: auto;
+}
+
+.form h1 {
+  margin: 50px 0;
+  font-size: 50px;
+  font-weight: 400;
+  color: rgb(77, 47, 47);
+  text-align: center;
+}
+
+
+form .form-group {
+  width: 100%;
+  margin: 35px 0;
+  position: relative;
+} 
+
+.form-group input {
+  display: block;
+  height: 100%;
+  width: 100%;
+  border: none;
+  font-size: 17px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: rgb(240, 219, 219);
+  box-shadow: -3px -4px 31px -33px rgba(0,0,0,0.72);
+  -webkit-box-shadow: -3px -4px 31px -33px rgba(0,0,0,0.72);
+  -moz-box-shadow: -3px -4px 31px -33px rgba(0,0,0,0.72);
+  outline: none;
+  border-bottom: 2px solid transparent;
+}
+
+.form-group textarea {
+  display: block;
+  width: 100%;
+  border: 1px solid #ccc;
+  outline: none;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 17px;
+  background-color: rgb(240, 219, 219);
+  resize: none;
+}
+
+.form-group .input-label {
+  position: absolute;
+  bottom: 12px;
+  font-size: 15.9px;
+  margin-left: 10px;
+  pointer-events: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.form-group .textarea-label {
+  position: absolute;
+  pointer-events: none;
+  width: 100%;
+  top: 8px;
+  font-size: 17px;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.form-group input:focus{
+  border-bottom: 2px solid rgb(138, 110, 110);
+}
+
+.form-group input:focus ~ .input-label,
+.form-group input.has-value ~ .input-label {
+  transform: translateY(-30px);
+  color: #3498db;
+  font-size: 15px;
+}
+
+
+.form-group textarea:focus ~ .textarea-label,
+.form-group textarea.has-value ~ .textarea-label {
+  transform: translateY(-35px);
+  color: #3498db;
+  font-size: 15px;
+}
+
+.button-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.button-group button {
+  display: inline-block;
+  border: none;
+  font-size: 17px;
+  border-radius: 4px;
+  width: 30%;
+  padding: 10px 15px;
+  background-color: #2222;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.button-group button:hover{
+  background: linear-gradient(115deg, #bcbebe 10%, #905ca3 90%);
+  cursor: pointer;
+  color: whitesmoke;
+}
+
+.status-label {
+  font-size: 17px;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+select {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 17px;
+  color: #222;
+  border-radius: 4px;
+  outline: none;
+  background-color: #F0DBDB;
+}
+/*
+button.active-btn{
+  background-color: #ddd;
+  background: linear-gradient(115deg, #443c47 10%, #bcbebe 90%);
+  cursor: pointer;
+  transition: all 1s ease;
+  pointer-events: all;
+}
+
+
+
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+.form-group input{
+  background: none;
+  border: none;
+  border-bottom: 2px solid #201616;
+  color: rgba(17, 12, 12, 0.133);
+  font-size: 20px;
+  padding-bottom: 10px;
+  outline: none;
+  width: 100%;
+}
+
+.form-group input:focus{
+  border-bottom: 2px solid gray;
+}
+
+.form-group label{
+  position: absolute;
+  left: 20px;
+  bottom: 30px;
+  color: rgba(24, 16, 16, 0.133);
+  font-size: 18px;
+  display: block;
+  pointer-events: none;
+  transition: .3s ease;
+}
+
+.form-group textarea{
+  min-height: 50px;
+  width: 100%;
+
+  background: none;
+  border: none;
+  border-bottom: 2px solid #3b3030;
+  color: rgba(14, 8, 8, 0.133);
+  font-size: 20px;
+   padding-bottom: 10px; 
+  outline: none;
+}
+
+.form-group input:focus + label,
+.form-group input.has-value + label,
+.form-group textarea:focus + label,
+.form-group textarea.has-value + label{
+  top: 0;
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(14, 7, 7);
+}
+
+input[type=submit]{
+  border: 0;
+  background-color: #dddddd;
+  padding: 10px 0;
+  color: #7a7070;
+  font-size: 25px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all .4s ease;
+}
+
+input[type=submit]:hover{
+  background-color: tomato;
+} 
+
+*/

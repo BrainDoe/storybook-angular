@@ -7,10 +7,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PostFormComponent implements OnInit {
   statuses: string[] = ['Public', 'Private'];
+  inputValue: string = '';
+  preview: string = '';
+  desc: string = '';
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onInput(value: string) {
+    this.inputValue = value;
+  }
+  onPreview(value: string) {
+    this.preview = value;
+  }
+  onContent(value: string) {
+    this.desc = value;
   }
 
 }

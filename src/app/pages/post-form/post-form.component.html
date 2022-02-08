@@ -3,20 +3,41 @@
     <form class="form">
       <h1>Add a Story</h1>  
       <div class="form-group">
-        <label for="title">Title</label>
-        <input type="text" name="title" id="title">
+        <input 
+          [ngClass]="{'has-value': inputValue !== ''}"
+          (input)="onInput(input.value)" type="text" name="title" id="title" #input
+        >
+        <label class="input-label" for="title">Stoy Title</label>
       </div>
       <div class="form-group">
-        <textarea name="preview" id="preview" rows="10"></textarea>
+        <textarea 
+          [ngClass]="{'has-value': preview !== ''}"
+          name="preview" 
+          id="preview" 
+          rows="5"
+          (input)="onPreview(testarea1.value)"
+          #testarea1
+        ></textarea>
+        <label class="textarea-label" for="preview">Preview Snippet</label>
       </div>
-      <select name="status" id="status">
-        <option *ngFor="let status of statuses" [value]="status">{{ status }}</option>
-      </select>
       <div class="form-group">
-        <label for="content">Your Story</label>
-        <textarea name="content" id="content" rows="10"></textarea>
+        <textarea 
+          [ngClass]="{'has-value': desc !== ''}"
+          name="content" 
+          id="content" 
+          rows="10"
+          (input)="onContent(textarea2.value)"
+          #textarea2
+        ></textarea>
+        <label class="textarea-label" for="content">Your Story</label>
       </div>
       <div class="form-group">
+        <label for="status" class="status-label">Status</label><br>
+        <select name="status" id="status">
+          <option *ngFor="let status of statuses" [value]="status">{{ status }}</option>
+        </select>
+      </div>
+      <div class="button-group">
         <button>Save</button>
         <button>Cancel</button>
       </div>
