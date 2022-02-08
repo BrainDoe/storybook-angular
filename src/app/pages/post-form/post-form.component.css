@@ -104,6 +104,15 @@ form .form-group {
   cursor: pointer;
 }
 
+.button-group button.cancel {
+  background-color: rgb(172, 231, 54);
+}
+
+.button-group button.cancel:hover{
+  background: linear-gradient(115deg, #17f517 10%, #856f8d 90%);
+  cursor: pointer;
+  color: whitesmoke;
+}
 .button-group button:hover{
   background: linear-gradient(115deg, #bcbebe 10%, #905ca3 90%);
   cursor: pointer;
