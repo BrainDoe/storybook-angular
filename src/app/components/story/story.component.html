@@ -1,4 +1,13 @@
 <div class="story">
+  <div class="dots" (click)="onToggle()">
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+  </div>
+  <ul class="details" *ngIf="toggle">
+    <li>Edit</li>
+    <li>Delete</li>
+  </ul>
   <h2>Story Title</h2>
   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus, nostrum. Exercitationem, tenetur! Nostrum, aliquid distinctio.</p>
   <div class="read-more">
