@@ -1,0 +1,50 @@
+.user-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 50px 0;
+}
+
+.user-header h1 {
+  font-size: 35px;
+  font-weight: 400;
+  color: #222;
+}
+
+.user-header h1 span {
+  color: yellowgreen;
+  font-weight: 500;
+}
+
+.user-header .add-post {
+  background-color: yellowgreen;
+  padding: 10px 15px;
+  margin-right: 20px;
+  border-radius: 4px;
+  color: whitesmoke;
+  font-size: 17px;
+  box-shadow: 02px 02px 5px 3px rgba(138, 159, 193, 0.14);
+  transition: .3s ease;
+  cursor: pointer;
+}
+
+.user-header .add-post:hover {
+  background-color: rgb(135, 184, 37);
+}
+
+.stories {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 60px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 500px) {
+  .property-list {
+    justify-content: center;
+    /* flex: 1; */
+    width: 100%;
+  }
+}

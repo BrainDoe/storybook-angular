@@ -1,3 +1,4 @@
+import { UserDashboardComponent } from './pages/user-dashboard/user-dashboard.component';
 import { PostFormComponent } from './pages/post-form/post-form.component';
 import { StoryComponent } from './components/story/story.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -11,6 +12,7 @@ const routes: Routes = [
   {path: 'register', component: RegisterComponent},
   {path: 'home', component: HomeComponent},
   {path: 'post-form', component: PostFormComponent},
+  {path: 'user-dashboard', component: UserDashboardComponent},
   {path: 'login', component: LoginComponent},
   {path: 'single-story/:id', component: StoryComponent},
 ];

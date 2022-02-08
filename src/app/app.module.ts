@@ -10,6 +10,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { StoriesComponent } from './components/stories/stories.component';
 import { StoryComponent } from './components/story/story.component';
 import { PostFormComponent } from './pages/post-form/post-form.component';
+import { UserDashboardComponent } from './pages/user-dashboard/user-dashboard.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { PostFormComponent } from './pages/post-form/post-form.component';
     HeaderComponent,
     StoriesComponent,
     StoryComponent,
-    PostFormComponent
+    PostFormComponent,
+    UserDashboardComponent
   ],
   imports: [
     BrowserModule,
