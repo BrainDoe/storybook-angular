@@ -12,6 +12,7 @@ import { StoryComponent } from './components/story/story.component';
 import { PostFormComponent } from './pages/post-form/post-form.component';
 import { UserDashboardComponent } from './pages/user-dashboard/user-dashboard.component';
 import { StoryDetailsComponent } from './pages/story-details/story-details.component';
+import { SideNavComponent } from './components/side-nav/side-nav.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { StoryDetailsComponent } from './pages/story-details/story-details.compo
     StoryComponent,
     PostFormComponent,
     UserDashboardComponent,
-    StoryDetailsComponent
+    StoryDetailsComponent,
+    SideNavComponent
   ],
   imports: [
     BrowserModule,
