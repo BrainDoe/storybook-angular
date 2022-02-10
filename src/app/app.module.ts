@@ -11,6 +11,7 @@ import { StoriesComponent } from './components/stories/stories.component';
 import { StoryComponent } from './components/story/story.component';
 import { PostFormComponent } from './pages/post-form/post-form.component';
 import { UserDashboardComponent } from './pages/user-dashboard/user-dashboard.component';
+import { StoryDetailsComponent } from './pages/story-details/story-details.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { UserDashboardComponent } from './pages/user-dashboard/user-dashboard.co
     StoriesComponent,
     StoryComponent,
     PostFormComponent,
-    UserDashboardComponent
+    UserDashboardComponent,
+    StoryDetailsComponent
   ],
   imports: [
     BrowserModule,

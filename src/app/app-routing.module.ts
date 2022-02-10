@@ -1,6 +1,6 @@
+import { StoryDetailsComponent } from './pages/story-details/story-details.component';
 import { UserDashboardComponent } from './pages/user-dashboard/user-dashboard.component';
 import { PostFormComponent } from './pages/post-form/post-form.component';
-import { StoryComponent } from './components/story/story.component';
 import { HomeComponent } from './pages/home/home.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
@@ -14,7 +14,7 @@ const routes: Routes = [
   {path: 'post-form', component: PostFormComponent},
   {path: 'user-dashboard', component: UserDashboardComponent},
   {path: 'login', component: LoginComponent},
-  {path: 'single-story/:id', component: StoryComponent},
+  {path: 'story-details/:id', component: StoryDetailsComponent},
 ];
 
 @NgModule({

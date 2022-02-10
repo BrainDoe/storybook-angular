@@ -4,14 +4,17 @@
     <div class="dot"></div>
     <div class="dot"></div>
   </div>
-  <ul class="details" *ngIf="toggle">
-    <li>Edit</li>
-    <li>Delete</li>
-  </ul>
+  <div style="width: 100%; height: 100%; background-color: red; z-index: 6;">
+    <ul class="details" *ngIf="toggle">
+      <li>Edit</li>
+      <li>Delete</li>
+      <li>Details</li>
+    </ul>
+  </div>
   <h2>Story Title</h2>
   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus, nostrum. Exercitationem, tenetur! Nostrum, aliquid distinctio.</p>
   <div class="read-more">
-    <a [routerLink]="'/story/'+123">Read More</a>
+    <a [routerLink]="'/story-details/'+123">Read More</a>
     <h5><strong>Donatus</strong> Story</h5>
   </div>
 </div>
