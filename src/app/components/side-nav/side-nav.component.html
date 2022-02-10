@@ -1,9 +1,9 @@
-<nav class="nav">
+<nav *ngIf="showSideNav" class="nav">
   <ul class="nav-list">
-    <li><a routerLink="/home">Home</a></li>
-    <li><a routerLink="/posts">Post</a></li>
-    <li><a routerLink="/user-dashboard">Dashboard</a></li>
-    <li><a routerLink="/login">Login</a></li>
-    <li><a routerLink="/register">Register</a></li>
+    <li><a routerLink="/home" (click)="closeSideNav()">Home</a></li>
+    <li><a routerLink="/post-form" (click)="closeSideNav()">Post</a></li>
+    <li><a routerLink="/user-dashboard" (click)="closeSideNav()">Dashboard</a></li>
+    <li><a routerLink="/login" (click)="closeSideNav()">Login</a></li>
+    <li><a routerLink="/register" (click)="closeSideNav()">Register</a></li>
   </ul>
 </nav>
