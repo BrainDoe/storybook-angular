@@ -20,6 +20,7 @@ export class SideNavComponent implements OnInit {
 
   closeSideNav() {
     this.showSideNav = !this.showSideNav;
+    this.uiService.toggleSideNav();
   }
 
 }

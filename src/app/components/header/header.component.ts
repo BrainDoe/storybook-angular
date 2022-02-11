@@ -12,7 +12,6 @@ export class HeaderComponent implements OnInit {
   sideNav: boolean = false;
 
   constructor(private uiService: UiService) { 
-
     this.subscription = this.uiService.onToggle().subscribe((value: boolean) => (this.sideNav = value));
    }
 
