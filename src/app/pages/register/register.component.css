@@ -1,8 +1,10 @@
 .wrapper {
   width: 100%;
-  height: calc(90vh - 70px);
+  /* height: calc(90vh - 70px); */
+
   display: flex;
-  margin: 5vh 0;
+  /* margin: 5vh 0; */
+  margin: 30px 0;
   /* align-items: center; */
   justify-content: center;
 }
@@ -51,6 +53,24 @@ h1 {
   box-shadow: 02px 02px 5px 5px rgba(138, 159, 193, 0.14);
   color: teal;
   background-color: white;
+}
+
+.photo-wrapper {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.photo-wrapper label {
+  text-align: center;
+  background-color: rgb(177, 133, 21);
+  width: 100%;
+  display: inline-block;
+  padding: 8px 10px;
+  font-size: 17px;
+  color: whitesmoke;
+  border-radius: 4px;
+  box-shadow: 02px 02px 5px 5px rgba(138, 159, 193, 0.14);
+  cursor: pointer;
 }
 
 .form-group button {

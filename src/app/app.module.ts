@@ -13,6 +13,8 @@ import { PostFormComponent } from './pages/post-form/post-form.component';
 import { UserDashboardComponent } from './pages/user-dashboard/user-dashboard.component';
 import { StoryDetailsComponent } from './pages/story-details/story-details.component';
 import { SideNavComponent } from './components/side-nav/side-nav.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,10 @@ import { SideNavComponent } from './components/side-nav/side-nav.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

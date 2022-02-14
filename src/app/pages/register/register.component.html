@@ -1,25 +1,45 @@
 <div class="container">
   <div class="wrapper">
-    <form class="form">
+    <form class="form" [formGroup]="registerFormGroup">
       <h1>Register</h1>
       <div class="form-group">
         <label for="name">Full Name</label>
         <input type="text" name="name" id="name" formControlName="name">
+        <small *ngIf="registerForm.name.invalid && registerForm.touch">Name is Required</small>
       </div>
       <div class="form-group">
         <label for="email">Email</label>
         <input type="email" name="email" id="email" formControlName="email">
+        <small *ngIf="registerForm.email.invalid && registerForm.touch">
+          <span *ngIf="registerForm.email.errors?.required">Email is Required</span>
+          <span *ngIf="registerForm.email.errors?.email">Please enter a valid email address</span>
+        </small>
       </div>
       <div class="form-group">
         <label for="password">Password</label>
         <input type="password" name="password" id="password" formControlName="password">
+        <small *ngIf="registerForm.password.invalid && registerForm.touch">Password is Required</small>
       </div>
       <div class="form-group">
         <label for="password-confirm">Confirm Password</label>
-        <input type="password" name="password-confirm" id="password-confirm" formControlName="password-confirm">
+        <input type="password" name="passwordConfirm" id="password-confirm" formControlName="passwordConfirm">
+        <!-- <small *ngIf="loginForm.confirmPassword.invalid && loginForm.touch">
+          <span *ngIf="loginForm.confirmPassword.errors?.required">Confirm Password is Required</span>
+          <span *ngIf="loginForm.confirmPassword.errors?.confirmPassword">Confirm Password must match with password</span>
+        </small> -->
+      </div>
+      <div class="photo-wrapper">
+        <label for="image" class="photo">
+          Upload Photo
+        </label>
+        <input type="file" name="image" formControlName="image" id="image" style="display: none;">
+        <small *ngIf="registerForm.image.invalid && registerForm.touch">Image is Required</small>
       </div>
       <div class="form-group spacer">
-        <button type="button" class="button">Submit</button>
+        <button (click)="onSubmit()" type="submit" class="button">Submit</button>
+      </div>
+      <div *ngIf="isSubmitted && authError">
+        <small>Invalid Sign Up Details</small>
       </div>
     </form>
   </div>

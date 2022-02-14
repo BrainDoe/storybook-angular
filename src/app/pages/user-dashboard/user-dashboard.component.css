@@ -47,4 +47,16 @@
     /* flex: 1; */
     width: 100%;
   }
+
+  .user-header h1 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #222;
+  }
+  
+  .user-header .add-post {
+    padding: 8px 10px;
+    margin-right: 0px;
+    font-size: 14px;
+  }
 }
