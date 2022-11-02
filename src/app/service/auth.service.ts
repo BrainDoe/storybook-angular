@@ -45,4 +45,8 @@ export class AuthService {
       return throwError(errorMessage);
   }
 
+  loginGoogle(): Observable<any> {
+    return this.http.get<any>("http://localhost:4100/users/auth/google")
+  }
+
 }

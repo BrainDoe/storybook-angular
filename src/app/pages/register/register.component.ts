@@ -25,6 +25,14 @@ export class RegisterComponent implements OnInit {
     this.initForm();
   }
 
+  // googleLogin() {
+  //   window.open("http://localhost:4100/users/auth/google", "_self");
+  // }
+
+  googleLign() {
+    this.authService.loginGoogle().subscribe();
+  }
+
   private initForm() {
     this.registerFormGroup = this.formBuilder.group({
       name: [null, Validators.required],

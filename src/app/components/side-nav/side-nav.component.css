@@ -3,15 +3,15 @@
   height: calc(100vh - 70px);
   background-color: rgba(0, 0, 0, 0.7);
   position: absolute;
-  overflow-y: none;
   top: 70px;
   right: 0;
   bottom: 0;
   z-index: 10;
-
+  
   display: flex;
   /* align-items: center; */
   justify-content: center;
+  scroll-behavior: unset;
 }
 
 .nav-list {
